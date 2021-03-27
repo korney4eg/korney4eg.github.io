@@ -1,4 +1,3 @@
-# theme: jekyll-theme-hacker
 title: Let's learn DevOps together
 description: "Practical tasks to learn more about DevOps"
 author:
@@ -7,6 +6,8 @@ author:
   url: "https://notes.makvaz.com/"
 
 baseurl: /
+
+google_analytics: "G-VNFFLDTNER"
 
 source: .
 destination: ./_site

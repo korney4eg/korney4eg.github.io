@@ -2,23 +2,19 @@
 layout: page
 title: Tasks
 ---
-
 <section>
-  {% if site.posts[0] %}
-
-        <h3>Tasks:</h3>
-
-    {%for post in site.posts %}
-      {% unless post.next %}
-        <ul>
-      {% endunless %}
+<h2>Tasks:</h2>
+{% for tag in site.tags %}
+<h3>{{ tag[0] | replace_regex: '_', ' '}}:</h3>
+    {%for post in tag[1] reversed %}
+    <ul>
         <li>
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
             {{ post.title }}
           </a>
         </li>
-    {% endfor %}
     </ul>
+    {% endfor %}
 
-  {% endif %}
+{% endfor %}
 </section>
