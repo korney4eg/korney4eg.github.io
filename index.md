@@ -1,29 +1,10 @@
-## Deep dive into DevOps
+---
+layout: page
+title: About project
+---
 
-Plan:
+When I started my way in administration, then in DevOps jobs I had great mentors who helped me to with learning a lot of things on practice. Later after getting more senior level I started to prepare on-boarding materials for newcomers, so that people who joined our team in 2 month become productive.
 
-Phase 1. Linux administration. Virtual Machines. Automation.
-0. Working with Linux. Install packages, start services, troubleshoot if something not working. VM on Virtualbox.
-1. Let's setup blog engine on VM.
-2. Scripting. Let's automate things we made on Lesson 1.
-3. Using configuration management tool to setup blog engine.
-4. Let's make service more reliable.
+Right now I would like to do something similar and prepare materials for training for people that would like to try out technical tools and practices from DevOps.
 
-Phase 2. Docker containers. Docker compose. CI/CD.
-0. Run docker locally. Build custom docker image. Work with container.
-1. Run blog engine on containers. Setup using docker-compose.
-2. Automating building and starting up containers.
-3. Setup CI/CD tool to build images, start containers.
-4. Scripting in CI/CD.
-
-Phase 3. Kubernetes. Monitoring
-
-0. Start k8s locally. Try to run single pod there.
-1. Run blog engine on k8s.
-2. Setup monitoring in K8s.
-4. Horisontal autoscaling and load tests.
-
-Phase 4.(Optional). Run in Public Cloud. Terraform
-0. Start VMs, Get know LBs, Database as a Service.
-1. Setup manualy blog engine in Cloud.
-2. Deploy blog engine using terraform.
+The idea is following: I'm posting a quest and give details for it. Then people try to make this quest. I will gonna play "customer" role and will not give any manuals. You can google how to do it, read books, reddit, stack overflow, view youtube videos - whatever you want. I will answer your questions in comments and give my feedback. So you gonna learn by doing stuff rather then reading and copy pasting.
