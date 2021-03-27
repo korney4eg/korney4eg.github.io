@@ -6,13 +6,7 @@ title: Tasks
 <section>
   {% if site.posts[0] %}
 
-    {% capture currentyear %}{{ 'now' | date: "%Y" }}{% endcapture %}
-    {% capture firstpostyear %}{{ site.posts[0].date | date: '%Y' }}{% endcapture %}
-    {% if currentyear == firstpostyear %}
-        <h3>This year's posts</h3>
-    {% else %}  
-        <h3>{{ firstpostyear }}</h3>
-    {% endif %}
+        <h3>Tasks:</h3>
 
     {%for post in site.posts %}
       {% unless post.next %}
@@ -26,7 +20,7 @@ title: Tasks
           <ul>
         {% endif %}
       {% endunless %}
-        <li><time>{{ post.date | date:"%d %b" }} - </time>
+        <li>
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
             {{ post.title }}
           </a>
