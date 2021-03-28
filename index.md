@@ -4,7 +4,7 @@ title: About project
 ---
 ## << DISCLAMER: CURRENTLY NOT ALL TASKS ARE READY. >>
 
-Welcome to our learning comunity. Here you can find out [tasks](/tasks) that will help you to get practice on DevOps. You can try to complete any task that you feel comfortable with. If you have any troubles feel free to contact us in [Discord](https://discord.gg/f2wWxZfKSJ).
+Welcome to our learning comunity. Here you can find out [tasks](/tasks) that will help you to get practice on DevOps. You can try to complete any task that you feel comfortable with. If you have any troubles feel free to contact us in Discord.
 
 ## History
 
