@@ -1,6 +1,6 @@
 ---
 title: Task 04. Using configuration management tool to setup blog engine.
-published: false
+published: true
 tags: "Phase1"
 ---
 

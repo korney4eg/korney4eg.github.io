@@ -1,6 +1,6 @@
 ---
 title: Task 05. Multi VM setup.
-published: false
+published: true
 tags: "Phase1"
 ---
 

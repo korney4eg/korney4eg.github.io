@@ -1,6 +1,6 @@
 ---
 title: Task 03. Scripting.
-published: false
+published: true
 tags: "Phase1"
 ---
 

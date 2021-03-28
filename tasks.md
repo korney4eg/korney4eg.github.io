@@ -9,9 +9,13 @@ title: Tasks
     {%for post in tag[1] reversed %}
     <ul>
         <li>
+	{% if post.active %}
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
             {{ post.title }}
           </a>
+    {% else %}
+            {{ post.title }}
+    {% endif %}
         </li>
     </ul>
     {% endfor %}

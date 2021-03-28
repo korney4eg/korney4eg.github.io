@@ -1,6 +1,6 @@
 ---
 title: Task 02. Run blog in container.
-published: false
+published: true
 tags: "Phase2"
 ---
 

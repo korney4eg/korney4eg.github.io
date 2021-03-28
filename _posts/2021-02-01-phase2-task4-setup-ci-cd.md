@@ -1,6 +1,6 @@
 ---
 title: Task 04. Setup CI/CD tool to build images, start containers.
-published: false
+published: true
 tags: "Phase2"
 ---
 

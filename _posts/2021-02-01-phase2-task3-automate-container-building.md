@@ -1,6 +1,6 @@
 ---
 title: Task 03. Automating start of containers.
-published: false
+published: true
 tags: "Phase2"
 ---
 

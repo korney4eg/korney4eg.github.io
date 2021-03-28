@@ -1,6 +1,6 @@
 ---
 title: Task 01. Run docker locally.
-published: false
+published: true
 tags: "Phase2"
 ---
 

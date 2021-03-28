@@ -1,6 +1,6 @@
 ---
 title: Task 02. Setup blog engine on VM.
-published: false
+published: true
 tags: "Phase1"
 ---
 
