@@ -1,7 +1,7 @@
 ---
 title: Task 01. Linux administration. Install packages, start services, troubleshoot if something not working. VM on Virtualbox.
 published: true
-active: false
+active: true
 tags: "Phase1"
 ---
 
