@@ -16,7 +16,7 @@ Time goes and our online magazine started hiring writers and editors. Soon they 
 * install and setup WordPress
 * make sure that you can access admin panel in browser and can start creating new posts.
 
-### Additional tasks if you feel that it was too yeasy.
+### Additional tasks if you feel that it was too easy.
 1. Make sure that you can access only 80 ( and 443 port if HTTPS enabled) and MySQL port 3306 is open only inside your VM.
 2. Know your software - Try to change default theme of your site, try to add some posts, comments. Inspect database, what changes do you see there, how does WP organise it's data
 

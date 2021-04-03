@@ -26,7 +26,7 @@ Here the story begins. You are working on video games magazine that wants to go 
 
 * make sure that this page rendered correctly when you access your virtual machine ip address in browser.
 
-### Additional tasks if you feel that it was too yeasy.
+### Additional tasks if you feel that it was too easy.
 1. Make sure that you opened only needed ports
 2. Know your software - make sure that you have installed stable and secure nginx version (no CVE found for this version)
 3. Create self-signed certificate and setup HTTPS connection to your VM(Virtual Machine)

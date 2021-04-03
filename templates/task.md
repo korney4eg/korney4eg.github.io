@@ -11,7 +11,7 @@ Small history here...
 
 Task description goes here ...
 
-### Additional tasks if you feel that it was too yeasy.
+### Additional tasks if you feel that it was too easy.
 1. do that
 2. do this
 
