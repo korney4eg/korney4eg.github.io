@@ -5,9 +5,9 @@ active: true
 tags: "Phase1"
 ---
 
-## Legend
-
 Here the story begins. You are working on video games magazine that wants to go digital (yes, only now in 2021) as a first SRE/DevOps guy, who helps right now with infrastructure. Paul, your manager asked you to prepare server to host new site.
+
+<!--more-->
 
 ## Task
 

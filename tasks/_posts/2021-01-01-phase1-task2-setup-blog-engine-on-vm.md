@@ -5,9 +5,9 @@ active: true
 tags: "Phase1"
 ---
 
-## Legend
-
 Time goes and our online magazine started hiring writers and editors. Soon they gonna  writing their articles and put it into internet. CTO decided that best platform for this would be WordPress, as it's used by many companies like [The Walt Disney Company](https://thewaltdisneycompany.com/), [Tech Crunch](http://www.techcrunch.com/), [The New Yorker](http://www.newyorker.com/) and many more. Would be nice to prepare instance of the WordPress, so that authors can start writing.
+
+<!--more-->
 
 ## Task
 
