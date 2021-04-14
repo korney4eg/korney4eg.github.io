@@ -11,8 +11,8 @@ Authors want to try out new blogging platform. They asked you to install and set
 ## Task
 
 * **Create VM** : Setup Ubuntu on Virtual Machive (Virtual Box). - better use snapshots from task 2.
-* ** Automate deployment** : write bash script `setup_wordpress.sh` that installs, configures and starts nginx, mysql, WordPress. WordPress should have already configured with theme [twentynineteen](https://ru.wordpress.org/themes/twentynineteen/) and with created user `admin` with password `!2three456.`.
-* Share your script in GitHub. GitHub is most popular place to store code in the internet. For it you need to lear `git`. Git - is version control system, it allows you to store all history of your code. Git is used practically everywhere.
+* **Automate deployment** : write bash script `setup_wordpress.sh` that installs, configures and starts nginx, mysql, WordPress. WordPress should have already configured with theme [twentynineteen](https://ru.wordpress.org/themes/twentynineteen/) and with created user `admin` with password `!2three456.`.
+* Share your script in GitHub. GitHub is most popular place to store code in the internet. For it you need to learn `git`. Git - is version control system, it allows you to store all history of your code. Git is used practically everywhere.
 
 ### Additional tasks if you feel that it was too easy.
 1. Automate VM manipulation with [Vagrant](https://www.vagrantup.com/downloads). It will allow you to configure everything in the code. Set VM parameters in `Vagrantfile`.
