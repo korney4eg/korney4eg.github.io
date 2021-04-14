@@ -1,17 +1,17 @@
 ---
 title: Task 04. Using Ansible to configure Wordpress on VirtualBox.
 published: true
+active: true
 tags: "Phase1"
 ---
 
-Authors want to try out new blogging platform. They asked you to install and setup WordPress for everyone. Suddenly you realised that there are already 30 editors working in online magazine "GamePlayer". You hear behind your back Paul's voice: "You can do it 30 times or you can write once and run anytime you want".
 
-One day you were on local DevOps conference and one guy talked about Configuration Management on laptop, using Vagrant and Ansible. He mentioned that Vagrant allows you configure and operate virtual machines using only command line and Ansible allows you configure all you need. You were so excited about that new things, so after comming home you wanted to try Vagrant and Ansible yourself and asked guy from conference to send you example. He sent you a [link to the repo on GitHub](link) and asked to fork it.
+One day you were on local DevOps conference and one guy talked about Configuration Management on laptop, using Vagrant and Ansible. He mentioned that Vagrant allows you configure and operate virtual machines using only command line and Ansible allows you configure all you need. You were so excited about that new things, so after comming home you wanted to try Vagrant and Ansible yourself and asked guy from conference to send you example. He sent you a [link to the repo on GitHub](https://github.com/learningdevops-makvaz-com/phase01_task04) and asked to fork it.
 <!--more-->
 
 ## Task
 
-* **Repository**: Fork [repository](link) and clone forked repo.
+* **Repository**: Fork [repository](https://github.com/learningdevops-makvaz-com/phase01_task04) and clone forked repo.
 * **Create VM** : using Vagrant start configured VM `wordpress`. Try to provision it. Destroy, recreate.
 * **Configuration Management** : update ansible playbook `wordpress.yaml` that installs, configures and starts nginx, mysql, WordPress. WordPress should have already configured with theme [twentynineteen](https://ru.wordpress.org/themes/twentynineteen/) and with created user `admin` with password `!2three456.`.
 * **Contribute**: After wordpress is configured using ansible push all your changes to the forked repo and let know moderators.
