@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/korney4eg/change-checker:v0.3.1
-      options: "-v /home/runner/work/:/opt/"
+      options: "-v /home/runner/work/korney4eg.github.io/:/opt/"
     steps:
          - name: Log the node version
            run: |
