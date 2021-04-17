@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/korney4eg/change-checker:v0.3.1
-      options: "-v /Users/aliaksei.karneyeu/projects/learndevops:/opt/"
+      options: "-v /home/:/opt/"
     steps:
          - name: Log the node version
            run: |
-             ls -l /opt/ /github/workspace
+             ls -l /opt/
              # /change-checker check -c /opt/.github/actions/config.yaml -u master -b $GITHUB_SHA -d
