@@ -1,0 +1,19 @@
+---
+name: Upload Release Asset
+
+on:
+  push:
+    branches:
+      - github_workflow
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/korney4eg/change-checker:v0.3.1
+      options: "-v /Users/aliaksei.karneyeu/projects/learndevops:/opt/"
+    steps:
+         - name: Log the node version
+           run: |
+             ls -l /opt/ /github/workspace
+             # /change-checker check -c /opt/.github/actions/config.yaml -u master -b $GITHUB_SHA -d
