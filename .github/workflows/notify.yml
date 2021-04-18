@@ -2,9 +2,7 @@
 name: Upload Release Asset
 
 on:
-  push:
-    branches:
-      - github_workflow
+  pull_request:
 
 jobs:
   build:
@@ -14,8 +12,6 @@ jobs:
     steps:
          - name: Log the node version
            env:
-            TG_API_KEY: ${{ secrets.TG_API_KEY}}
-            TG_CHANNEL_ID: ${{ secrets.TG_CHANNEL_ID }}
             DISCORD_API: ${{ secrets.DISCORD_API }}
             DISCORD_CHANNEL_URL: ${{ secrets.DISCORD_CHANNEL_URL }}
            run: |
