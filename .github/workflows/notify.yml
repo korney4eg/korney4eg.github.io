@@ -19,4 +19,4 @@ jobs:
              cd korney4eg.github.io/
              git checkout $GITHUB_REF
              bundle install
-             /change-checker check -c config.yaml -u master -b $GITHUB_SHA -d
+             /change-checker check -c config.yaml -u master -b $GITHUB_REF -d
