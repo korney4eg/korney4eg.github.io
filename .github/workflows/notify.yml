@@ -1,8 +1,8 @@
 ---
 name: Notify about new articles on Pull Requests
 
-on: [push, pull_request]
-  # pull_request
+on: 
+  pull_request
 
 jobs:
   build:
@@ -10,7 +10,7 @@ jobs:
     container:
       image: ghcr.io/korney4eg/change-checker:v0.3.1
     steps:
-         - name: Log the node version
+         - name: Notify on new content on Discord
            env:
             DISCORD_API: ${{ secrets.DISCORD_API }}
             DISCORD_CHANNEL_URL: ${{ secrets.DISCORD_CHANNEL_URL }}
