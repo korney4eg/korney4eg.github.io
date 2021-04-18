@@ -18,6 +18,6 @@ jobs:
            run: |
              git clone https://github.com/korney4eg/korney4eg.github.io/ > /dev/null
              cd korney4eg.github.io/
-             git checkout $(git merge-base $GITHUB_SHA origin/master) > /dev/null
+             git checkout $GITHUB_SHA > /dev/null
              bundle install > /dev/null
-             /change-checker check -c config.yaml -u master -b $(git merge-base $GITHUB_SHA origin/master)
+             /change-checker check -c config.yaml -u master -b $GITHUB_SHA
