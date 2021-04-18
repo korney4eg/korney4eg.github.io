@@ -15,8 +15,9 @@ jobs:
             DISCORD_API: ${{ secrets.DISCORD_API }}
             DISCORD_CHANNEL_URL: ${{ secrets.DISCORD_CHANNEL_URL }}
            run: |
-             git clone https://github.com/korney4eg/korney4eg.github.io/ > /dev/null
+             env
+             git clone https://github.com/korney4eg/korney4eg.github.io/
              cd korney4eg.github.io/
-             git checkout $GITHUB_SHA > /dev/null
-             bundle install > /dev/null
-             /change-checker check -c config.yaml -u master -b $GITHUB_SHA -d
+             git checkout $GITHUB_HEAD_REF
+             bundle install
+             /change-checker check -c config.yaml -u master -b $GITHUB_HEAD_REF -d
