@@ -1,0 +1,15 @@
+tasks:
+  - action: push
+    command: |
+      git checkout %s > /dev/null ; jekyll build > /dev/null
+    file_name: _site/atom.xml
+    output_template: |
+      curl -v -H "Authorization: Bot ${DISCORD_API_KEY}" \
+        -H "User-Agent: myBotThing (http://some.url, v0.1)" \
+        -H "Content-Type: application/json" \
+        -X POST \
+        -d '{"content":"The new task is available: {{.Title}} - {{.Url}}"}' \
+        ${DISCORD_CHANNEL_URL}
+    only_branches:
+      - master
+

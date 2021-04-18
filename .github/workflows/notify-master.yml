@@ -1,0 +1,23 @@
+---
+name: Notify about new articles on master branch
+
+on:
+  push:
+    - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/korney4eg/change-checker:v0.3.1
+    steps:
+         - name: Log the node version
+           env:
+            DISCORD_API: ${{ secrets.DISCORD_API }}
+            DISCORD_CHANNEL_URL: ${{ secrets.DISCORD_ANOUNSMENT_CHANNEL_URL }}
+           run: |
+             git clone https://github.com/korney4eg/korney4eg.github.io/ > /dev/null
+             cd korney4eg.github.io/
+             git checkout $GITHUB_SHA > /dev/null
+             bundle install > /dev/null
+             /change-checker check -c config.yaml -u master -b $(git log --grep="Merge.*" --pretty=format:%H -n2|tail -n1) -d
