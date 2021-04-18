@@ -2,8 +2,8 @@
 name: Notify about new articles on Pull Requests
 
 on:
-  push
-  # pull_request:
+  # push
+  pull_request:
 
 jobs:
   build:
