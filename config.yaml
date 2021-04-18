@@ -4,14 +4,14 @@ tasks:
       git checkout %s > /dev/null ; jekyll build > /dev/null
     file_name: _site/atom.xml
     output_template: |
-      echo {{ .Title }} #\
-      # curl -s -X POST -H 'Content-Type: application/json' -d "{\"chat_id\": \"${TG_CHANNEL_ID}\", \"text\": \"Here is a new task: {{.Title}} - {{.Url}}\"}" https://api.telegram.org/bot${TG_API}/sendMessage && \
-      # curl -s -H "Authorization: Bot ${DISCORD_API}" \
-      #   -H "User-Agent: myBotThing (http://some.url, v0.1)" \
-      #   -H "Content-Type: application/json" \
-      #   -X POST \
-      #   -d '{"content":"Here is a new task: {{.Title}} - {{.Url}}"}' \
-      #   ${DISCORD_CHANNEL_URL}
+      echo {{ .Title }} \
+      curl -s -X POST -H 'Content-Type: application/json' -d "{\"chat_id\": \"${TG_CHANNEL_ID}\", \"text\": \"Here is a new task: {{.Title}} - {{.Url}}\"}" https://api.telegram.org/bot${TG_API}/sendMessage && \
+      curl -s -H "Authorization: Bot ${DISCORD_API}" \
+        -H "User-Agent: myBotThing (http://some.url, v0.1)" \
+        -H "Content-Type: application/json" \
+        -X POST \
+        -d '{"content":"Here is a new task: {{.Title}} - {{.Url}}"}' \
+        ${DISCORD_CHANNEL_URL}
     only_branches:
       - master
 
