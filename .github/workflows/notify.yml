@@ -15,5 +15,5 @@ jobs:
     steps:
          - name: Log the node version
            run: |
-             ls -l /opt/ /github/home/ /github/
+             ls -l /opt/ /github/home/ /github/home/
              # /change-checker check -c /opt/.github/actions/config.yaml -u master -b $GITHUB_SHA -d
