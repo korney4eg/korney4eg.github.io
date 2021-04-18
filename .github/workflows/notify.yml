@@ -16,6 +16,7 @@ jobs:
            run: |
              git clone https://github.com/korney4eg/korney4eg.github.io/
              cd korney4eg.github.io/
+             git checkout $GITHUB_SHA
              # echo $GITHUB_SHA
-             # ls -lR . /opt/ /github/home/ /github/home/
+             # ls -lR .
              /change-checker check -c .github/actions/config.yaml -u master -b $GITHUB_SHA -d
