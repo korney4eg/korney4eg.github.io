@@ -4,8 +4,7 @@ tasks:
       git checkout %s > /dev/null ; jekyll build > /dev/null
     file_name: _site/atom.xml
     output_template: |
-      echo {{ .Title }} \
-      curl -s -H "Authorization: Bot ${DISCORD_API_KEY}" \
+      curl -v -H "Authorization: Bot ${DISCORD_API_KEY}" \
         -H "User-Agent: myBotThing (http://some.url, v0.1)" \
         -H "Content-Type: application/json" \
         -X POST \
