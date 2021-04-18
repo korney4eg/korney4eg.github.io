@@ -15,5 +15,8 @@ jobs:
     steps:
          - name: Log the node version
            run: |
+             git clone https://github.com/korney4eg/korney4eg.github.io/
+             cd korney4eg.github.io/
+             echo $GITHUB_SHA
              ls -lR . /opt/ /github/home/ /github/home/
              # /change-checker check -c /opt/.github/actions/config.yaml -u master -b $GITHUB_SHA -d
