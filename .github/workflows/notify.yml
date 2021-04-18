@@ -1,0 +1,22 @@
+---
+name: Notify about new articles on Pull Requests
+
+on: 
+  pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/korney4eg/change-checker:v0.3.1
+    steps:
+         - name: Notify on new content on Discord
+           env:
+            DISCORD_API: ${{ secrets.DISCORD_API }}
+            DISCORD_CHANNEL_URL: ${{ secrets.DISCORD_CHANNEL_URL }}
+           run: |
+             git clone https://github.com/korney4eg/korney4eg.github.io/ > /dev/null
+             cd korney4eg.github.io/
+             git checkout $GITHUB_SHA > /dev/null
+             bundle install > /dev/null
+             /change-checker check -c config.yaml -u master -b $GITHUB_SHA -d
