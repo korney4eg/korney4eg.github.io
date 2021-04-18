@@ -19,4 +19,4 @@ jobs:
              git checkout $GITHUB_SHA
              # echo $GITHUB_SHA
              # ls -lR .
-             /change-checker check -c .github/actions/config.yaml -u master -b $GITHUB_SHA -d
+             /change-checker check -c config.yaml -u master -b $GITHUB_SHA -d
