@@ -1,8 +1,8 @@
 ---
-name: Upload Release Asset
+name: Notify about new articles on Pull Requests
 
-on:
-  pull_request:
+on: [push, pull_request]
+  # pull_request:
 
 jobs:
   build:
@@ -17,6 +17,6 @@ jobs:
            run: |
              git clone https://github.com/korney4eg/korney4eg.github.io/ > /dev/null
              cd korney4eg.github.io/
-             git checkout $GITHUB_SHA > /dev/null
+             git checkout $(git merge-base $GITHUB_SHA origin/$GITHUB_BASE_REF) > /dev/null
              bundle install > /dev/null
-             /change-checker check -c config.yaml -u master -b $GITHUB_SHA -d
+             /change-checker check -c config.yaml -u master -b $(git merge-base $GITHUB_SHA origin/$GITHUB_BASE_REF) -d
