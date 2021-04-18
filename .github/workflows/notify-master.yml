@@ -3,7 +3,8 @@ name: Notify about new articles on master branch
 
 on:
   push:
-    - master
+    branches:
+      - master
 
 jobs:
   build:
