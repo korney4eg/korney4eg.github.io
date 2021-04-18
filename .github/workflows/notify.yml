@@ -19,6 +19,7 @@ jobs:
              git clone https://github.com/korney4eg/korney4eg.github.io/ > /dev/null
              cd korney4eg.github.io/
              echo $(git merge-base $GITHUB_SHA origin/$GITHUB_BASE_REF)
-             git checkout $(git merge-base $GITHUB_SHA origin/$GITHUB_BASE_REF) > /dev/null
+             echo $GITHUB_BASE_REF
+             # git checkout $(git merge-base $GITHUB_SHA origin/$GITHUB_BASE_REF) > /dev/null
              bundle install > /dev/null
-             /change-checker check -c config.yaml -u master -b $(git merge-base $GITHUB_SHA origin/$GITHUB_BASE_REF) -d
+             # /change-checker check -c config.yaml -u master -b $(git merge-base $GITHUB_SHA origin/$GITHUB_BASE_REF) -d
