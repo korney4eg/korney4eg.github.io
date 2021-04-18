@@ -14,10 +14,8 @@ jobs:
     steps:
          - name: Log the node version
            run: |
-             git clone https://github.com/korney4eg/korney4eg.github.io/
+             git clone https://github.com/korney4eg/korney4eg.github.io/ > /dev/null
              cd korney4eg.github.io/
-             git checkout $GITHUB_SHA
-             bundle install
-             # echo $GITHUB_SHA
-             # ls -lR .
+             git checkout $GITHUB_SHA > /dev/null
+             bundle install > /dev/null
              /change-checker check -c config.yaml -u master -b $GITHUB_SHA -d
