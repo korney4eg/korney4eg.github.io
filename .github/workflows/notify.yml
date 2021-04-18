@@ -13,6 +13,11 @@ jobs:
       image: ghcr.io/korney4eg/change-checker:v0.3.1
     steps:
          - name: Log the node version
+           env:
+            TG_API_KEY: ${{ secrets.TG_API_KEY}}
+            TG_CHANNEL_ID: ${{ secrets.TG_CHANNEL_ID }}
+            DISCORD_API: ${{ secrets.DISCORD_API }}
+            DISCORD_CHANNEL_URL: ${{ secrets.DISCORD_CHANNEL_URL }}
            run: |
              git clone https://github.com/korney4eg/korney4eg.github.io/ > /dev/null
              cd korney4eg.github.io/
