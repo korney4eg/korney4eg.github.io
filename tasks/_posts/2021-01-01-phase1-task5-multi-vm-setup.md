@@ -17,7 +17,6 @@ Some time have passed and online magazine having his readers and fans. People li
 
 ### Additional tasks if you feel that it was too easy.
 1. Check out Wordpress files structure. Where does it store plugins, themes, uploaded pictures.
-2. 
 
 ### Tips:
 
