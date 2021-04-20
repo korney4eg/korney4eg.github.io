@@ -3,6 +3,7 @@ title: Advanced shell scripting.
 published: true
 active: true
 tags: "Phase1"
+difficulty: 3
 ---
 
 You probably know programm [ps](https://man7.org/linux/man-pages/man1/ps.1.html), that allow to see a lot of information about given process. Your task would be to write bash script that will get `pid` (process id) and shows following information:
