@@ -1,5 +1,5 @@
 ---
-title: Task 01. Linux administration. Advanced shell scripting.
+title: Advanced shell scripting.
 published: true
 active: true
 tags: "Phase1"
