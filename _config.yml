@@ -14,6 +14,12 @@ destination: ./_site
 permalink: /:title
 paginate: 5
 paginate_path: /page/:num/
+phases:
+  Phase1: "Linux administration"
+  Phase2: "Working with Docker containers"
+  Phase3: "Working with Kubernetes"
+  Phase4: "Working with public Cloud"
+
 
 defaults:
   -
