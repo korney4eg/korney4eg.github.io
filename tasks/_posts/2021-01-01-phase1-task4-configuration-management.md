@@ -15,7 +15,7 @@ One day you were on local DevOps conference and one guy talked about Configurati
 * **Repository**: Fork [repository](https://github.com/learningdevops-makvaz-com/phase01_task04) and clone forked repo.
 * **Create VM** : using Vagrant start configured VM `wordpress`. Try to provision it. Destroy, recreate.
 * **Configuration Management** : update ansible playbook `wordpress.yaml` that installs, configures and starts nginx, mysql, WordPress. WordPress should have already configured with theme [twentynineteen](https://ru.wordpress.org/themes/twentynineteen/) and with created user `admin` with password `!2three456.`.
-* **Contribute**: After wordpress is configured using ansible push all your changes to the forked repo and let know moderators.
+* **Contribute**: After wordpress is configured using ansible push all your changes to the forked repo and create pull request.
 * **Check yourself**: 
   1. Create VM using Vagrant for the first time that should trigger provision.
   2. You should be able to open [http://192.168.50.2](http://192.168.50.2) in your browser and see preconfigured theme and user already created.
