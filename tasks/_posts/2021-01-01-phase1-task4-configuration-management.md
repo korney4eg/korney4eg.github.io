@@ -3,6 +3,7 @@ title: Task 04. Using Ansible to configure Wordpress on VirtualBox.
 published: true
 active: true
 tags: "Phase1"
+difficulty: 2
 ---
 
 
