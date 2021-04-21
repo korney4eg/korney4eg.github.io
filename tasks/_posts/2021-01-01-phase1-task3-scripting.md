@@ -3,6 +3,7 @@ title: Task 03. Scripting. Automate installation of WordPress.
 published: true
 active: true
 tags: "Phase1"
+difficulty: 3
 ---
 
 Authors want to try out new blogging platform. They asked you to install and setup WordPress for everyone. Suddenly you realised that there are already 30 editors working in online magazine "GamePlayer". You hear behind your back Paul's voice: "You can do it 30 times or you can write once and run anytime you want".
