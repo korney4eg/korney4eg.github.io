@@ -22,13 +22,14 @@ Authors want to try out new blogging platform. They asked you to install and set
 ### Tips:
 
 * Bash script - is just a list of commands that will be run one after another. Here you will find magic of automation.
-* Changing wordpress settings from Web UI it's easy. If you want to do it from bash script you should find tools that allows you to run them from command line. You can search in internet for "cli tool for wordpress", it should find something usefull.
+* Changing WordPress settings much easier using `wp-cli` tool.
 
 ### Recommended soft:
 
 * [Virtual Box](https://www.virtualbox.org/wiki/Downloads)
 * [Ubuntu](https://releases.ubuntu.com/20.04/ubuntu-20.04.2-live-server-amd64.iso)
 * [WordPress](https://wordpress.org/download/)
+* [WP-cli](https://wp-cli.org/)
 
 ### Usefull links:
 

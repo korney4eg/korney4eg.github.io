@@ -31,13 +31,14 @@ One day you were on local DevOps conference and one guy talked about Configurati
 
 * Vagrant allows you manipulating Virtual Machines. Check out Usefull links for more info. Feel free to google.
 * You don't need to modify `Vagrantfile` to make it work properly. But you can experiment and change any settings that you want.
-* Changing wordpress settings from Web UI it's easy. If you want to do it from bash script you should find tools that allows you to run them from command line. You can search in internet for "cli tool for wordpress", it should find something usefull.
+* Changing WordPress settings much easier using `wp-cli` tool.
 
 ### Recommended soft:
 
 * [Virtual Box](https://www.virtualbox.org/wiki/Downloads)
 * [Vagrant](https://www.vagrantup.com/downloads)
 * [WordPress](https://wordpress.org/download/)
+* [WP-cli](https://wp-cli.org/)
 
 ### Usefull links:
 
