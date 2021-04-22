@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Tasks
-current_category: tasks
+title: Exercises
+current_category: exercises
 ---
 <section>
-<h2>Tasks:</h2>
+<h2>Exercises:</h2>
 {% include list.html %}
 </section>
