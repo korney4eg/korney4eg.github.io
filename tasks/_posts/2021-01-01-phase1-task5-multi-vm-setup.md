@@ -12,7 +12,9 @@ Some time have passed and online magazine having his readers and fans. People li
 ## Task
 
 * **Repository**: Fork [repository for task05](https://github.com/learningdevops-makvaz-com/phase01_task05) and clone forked repo.
-* **Provision Wordpress** : Setup Wordpress same as you have done in previous task using ansible and vagrant, but this time you should have two VMs one `database` where MySQL would be running and second `wordpress` which would be accessed from browser. Each of them have separate yaml file.
+* **Provision Wordpress** : Setup Wordpress using Ansible and Vagrant, but this time there would be two VMs:
+  1. `database`, where MySQL is running
+  2. `wordpress`, where nginx and php is running, it should point in configuration in `database` VM.
 * **Open ports**: Make sure that port 3306 on `database` is open for application in `wordpress` vm. 
 * **Source code**: Create pull request to repository that you forked, so that you can get comments on your code.
 * **Think yourself**: While it's easy to copy something from the internet, I would recommend writing roles and tasks writing from scratch, or reuse from previous task. In that case you would learn more.
