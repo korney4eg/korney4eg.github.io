@@ -6,7 +6,7 @@ tags: "Phase1"
 difficulty: 3
 ---
 
-You probably know programm [ps](https://man7.org/linux/man-pages/man1/ps.1.html), that allow to see a lot of information about given process. Your task would be to write bash script that will get `pid` (process id) and shows following information:
+You probably know programm [ps](https://man7.org/linux/man-pages/man1/ps.1.html), that allow to see a lot of information about given process. Your task would be to write bash script `proc_info.sh` that will get `pid` (process id) and shows following information:
 
 <!--more-->
 
@@ -15,7 +15,9 @@ You probably know programm [ps](https://man7.org/linux/man-pages/man1/ps.1.html)
 * what environment variables this process knows
 * what files curretrly open by this process
 
-All this information you need to get without using `ps` command or `*top`.
+Fork repo https://github.com/learningdevops-makvaz-com/phase01_adv_shell_scripting and use this code.
+
+All this information you need to get without using `ps`, `*top`, `lsof` or any other system programms.
 
 ## Tips
 
