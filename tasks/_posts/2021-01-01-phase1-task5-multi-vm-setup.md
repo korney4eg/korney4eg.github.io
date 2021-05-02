@@ -24,7 +24,7 @@ Some time have passed and online magazine having his readers and fans. People li
 
 ### Tips:
 
-* Vagrant allows you manipulating Virtual Machines. Check out Usefull links for more info. Feel free to google.
+* Vagrant allows you manipulating Virtual Machines. Check out Useful links for more info. Feel free to google.
 * You don't need to modify `Vagrantfile` to make it work properly. But you can experiment and change any settings that you want.
 * Changing WordPress settings much easier using `wp-cli` tool.
 * Ansible allows to group tasks in to the roles.
@@ -36,7 +36,7 @@ Some time have passed and online magazine having his readers and fans. People li
 * [WordPress](https://wordpress.org/download/)
 * [WP-cli](https://wp-cli.org/)
 
-### Usefull links:
+### Useful links:
 
 * [Vagrant - multiple VMs](https://www.vagrantup.com/docs/multi-machine)
 * [Ansible Quickstart](https://www.redhat.com/en/blog/system-administrators-guide-getting-started-ansible-fast?extIdCarryOver=true&sc_cid=701f2000001OH7YAAW)

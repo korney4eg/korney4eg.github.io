@@ -31,7 +31,7 @@ Authors want to try out new blogging platform. They asked you to install and set
 * [WordPress](https://wordpress.org/download/)
 * [WP-cli](https://wp-cli.org/)
 
-### Usefull links:
+### Useful links:
 
 * [Bash scripting](https://medium.com/sysf/bash-scripting-everything-you-need-to-know-about-bash-shell-programming-cd08595f2fba)
 

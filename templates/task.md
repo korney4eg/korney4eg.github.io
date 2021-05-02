@@ -20,7 +20,7 @@ Task description goes here ...
 * soft1
 * soft2
 
-### Usefull links:
+### Useful links:
 
 * link1
 * link2

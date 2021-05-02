@@ -29,7 +29,7 @@ One day you were on local DevOps conference and one guy talked about Configurati
 
 ### Tips:
 
-* Vagrant allows you manipulating Virtual Machines. Check out Usefull links for more info. Feel free to google.
+* Vagrant allows you manipulating Virtual Machines. Check out Useful links for more info. Feel free to google.
 * You don't need to modify `Vagrantfile` to make it work properly. But you can experiment and change any settings that you want.
 * Changing WordPress settings much easier using `wp-cli` tool.
 
@@ -40,7 +40,7 @@ One day you were on local DevOps conference and one guy talked about Configurati
 * [WordPress](https://wordpress.org/download/)
 * [WP-cli](https://wp-cli.org/)
 
-### Usefull links:
+### Useful links:
 
 * [Ansible in Vagrant](https://www.vagrantup.com/docs/provisioning/ansible_intro)
 * [Vagrant quickstart](https://learn.hashicorp.com/tutorials/vagrant/getting-started-index?in=vagrant/getting-started)
