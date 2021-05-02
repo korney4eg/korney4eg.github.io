@@ -46,7 +46,7 @@ Create Pull Request with changes on `Dockerfile`.
 
 * [Docker](https://www.docker.com/)
 
-### Usefull links:
+### Useful links:
 
 * [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
 * [What is container](https://www.docker.com/resources/what-container)

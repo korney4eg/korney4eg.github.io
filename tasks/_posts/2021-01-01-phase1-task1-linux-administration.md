@@ -37,7 +37,7 @@ Here the story begins. You are working on video games magazine that wants to go 
 * [Virtual Box](https://www.virtualbox.org/wiki/Downloads)
 * [Ubuntu](https://releases.ubuntu.com/20.04/ubuntu-20.04.2-live-server-amd64.iso)
 
-### Usefull links:
+### Useful links:
 
 * [Install Ubuntu on VirtualBox](https://linuxhint.com/install_ubuntu_virtualbox_2004/#:~:text=Downloading%20Ubuntu%2020.04%20ISO%20Image%3A&text=Click%20on%20the%2064%2Dbit%20PC%20(AMD64)%20server%20install,The%20download%20should%20start.)
 
