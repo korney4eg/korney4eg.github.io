@@ -3,7 +3,7 @@ title: Task 01. Linux administration. Install packages, start services, troubles
 published: true
 active: true
 tags: "Phase1"
-difficulty: 1
+difficulty: 0
 ---
 
 Here the story begins. You are working on video games magazine that wants to go digital (yes, only now in 2021) as a first SRE/DevOps guy, who helps right now with infrastructure. Paul, your manager asked you to prepare server to host new site.
