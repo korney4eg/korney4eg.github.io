@@ -3,6 +3,8 @@ title: Task 01. Run docker locally.
 active: true
 published: true
 tags: "Phase2"
+heroes:
+  - '[@dbemol](https://www.reddit.com/user/dbemol/)'
 difficulty: 1
 ---
 
