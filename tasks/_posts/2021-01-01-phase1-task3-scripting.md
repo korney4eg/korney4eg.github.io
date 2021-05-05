@@ -4,6 +4,10 @@ published: true
 active: true
 tags: "Phase1"
 difficulty: 3
+heroes:
+  - '[@dbemol](https://www.reddit.com/user/dbemol/)'
+  - '[Devan](https://github.com/devanbenz)'
+  - '[Maverick](https://twitter.com/rojintheone)'
 ---
 
 Authors want to try out new blogging platform. They asked you to install and setup WordPress for everyone. Suddenly you realised that there are already 30 editors working in online magazine "GamePlayer". You hear behind your back Paul's voice: "You can do it 30 times or you can write once and run anytime you want".
@@ -31,7 +35,7 @@ Authors want to try out new blogging platform. They asked you to install and set
 * [WordPress](https://wordpress.org/download/)
 * [WP-cli](https://wp-cli.org/)
 
-### Usefull links:
+### Useful links:
 
 * [Bash scripting](https://medium.com/sysf/bash-scripting-everything-you-need-to-know-about-bash-shell-programming-cd08595f2fba)
 

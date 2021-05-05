@@ -3,6 +3,8 @@ title: Task 01. Run docker locally.
 active: true
 published: true
 tags: "Phase2"
+heroes:
+  - '[@dbemol](https://www.reddit.com/user/dbemol/)'
 difficulty: 1
 ---
 
@@ -46,7 +48,7 @@ Create Pull Request with changes on `Dockerfile`.
 
 * [Docker](https://www.docker.com/)
 
-### Usefull links:
+### Useful links:
 
 * [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
 * [What is container](https://www.docker.com/resources/what-container)

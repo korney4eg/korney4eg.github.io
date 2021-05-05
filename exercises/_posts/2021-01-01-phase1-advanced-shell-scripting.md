@@ -3,6 +3,8 @@ title: Advanced shell scripting.
 published: true
 active: true
 tags: "Phase1"
+heroes:
+  - '[@dbemol](https://www.reddit.com/user/dbemol/)'
 difficulty: 3
 ---
 
