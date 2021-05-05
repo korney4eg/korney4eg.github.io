@@ -4,6 +4,8 @@ active: true
 published: true
 tags: "Phase1"
 difficulty: 2
+heroes:
+  - '[@dbemol](https://www.reddit.com/user/dbemol/)'
 ---
 
 After splitting up database and application load on servers decreased for some time. You were happy that you can separately operate on each server. One night on your server with wordpress - application server, logs felt all the disc space and web site wasn't working. Paul was not very happy about it, but as he was experienced, he knew that we learn faster on failures. He asked if you heard anything about vertical and horizontal scaling and advised you to read about it and make Magazine more reliable so if one server fails, the other keeps working.
