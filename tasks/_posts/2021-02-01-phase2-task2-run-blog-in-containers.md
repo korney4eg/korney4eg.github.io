@@ -4,7 +4,7 @@ active: true
 published: true
 tags: "Phase2"
 heroes: []
-difficulty: 1
+difficulty: 2
 ---
 
 "Video Games Magazine" become so popular that it was decided to hire programmer that would create plugins for wordpress that would customize your site. One day appeared girl named Mei. Mei asked you to setup her wordpress in docker on her laptop, so that she can develop locally. After you proposed to use Vagrant she answered that Vagrant and VMs is The Prehistoric Period and she want's to have something modern.
