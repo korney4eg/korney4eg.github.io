@@ -19,8 +19,8 @@ difficulty: 3
 
 ### 2. Build docker image
 
-* **Build wordpress image 1**:You need to update `Dockerfile` that has *nginx* with php support, to setup wordpress with predefined theme and [thank-after-post plugin **v0.8.0**](https://github.com/korney4eg/thank-after-post-plugin/releases/download/v0.8.0/thank-after-post.zip). Then build docker image with non-`latest` tag.
-* **Build wordpress image 2**:You need to update `Dockerfile` that has *nginx* with php support, to setup wordpress with predefined theme and [thank-after-post plugin **v0.9.0**](https://github.com/korney4eg/thank-after-post-plugin/releases/download/v0.9.0/thank-after-post.zip). Then build docker image  with non-`latest` tag.
+* **Build wordpress image 1**:You need to update `Dockerfile` that has *nginx* with php support, to setup wordpress with predefined theme and [thank-after-post plugin **v0.8.0**](https://github.com/korney4eg/thank-after-post-plugin/releases/download/v0.8.0/thank-after-post.zip). Then build docker image with unique tag.
+* **Build wordpress image 2**:You need to update `Dockerfile` that has *nginx* with php support, to setup wordpress with predefined theme and [thank-after-post plugin **v0.9.0**](https://github.com/korney4eg/thank-after-post-plugin/releases/download/v0.9.0/thank-after-post.zip). Then build docker image  with unique tag.
 
 ### 3. Upload images to public container regisry using GitHub actions
 
