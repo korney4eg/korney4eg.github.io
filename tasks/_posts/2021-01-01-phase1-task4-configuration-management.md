@@ -6,6 +6,7 @@ tags: "Phase1"
 heroes:
   - '[@dbemol](https://www.reddit.com/user/dbemol/)'
   - '[Devan](https://github.com/devanbenz)'
+  - '[Maverick](https://twitter.com/rojintheone)'
 difficulty: 2
 ---
 
