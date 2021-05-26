@@ -3,6 +3,7 @@ title: Task 03. Multicontainer setup. Beginning of CI.
 published: true
 active: true
 tags: "Phase2"
+difficulty: 3
 ---
 
 When you come to the workplace, Paul your manager and CTO of the company asked you to help with Mei's work. She took a vacation for one week. Now it seems that the plugin was written by Mei working properly. She even wrote some tests. Paul mentioned that you need to add an additional check of the plugin version to the test. He also added that Mei sent you an e-mail with more info.
