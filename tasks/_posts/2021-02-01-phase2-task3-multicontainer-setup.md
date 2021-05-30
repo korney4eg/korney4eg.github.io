@@ -31,13 +31,13 @@ When you come to the workplace, Paul your manager and CTO of the company asked y
 
 ### 2. Build docker image
 
-* **Build wordpress image 1**:You need to update `Dockerfile` that has *nginx* with php support, to set up wordpress with predefined theme and [thank-after-post plugin **v0.10.0**](https://github.com/korney4eg/thank-after-post-plugin/releases/download/v0.10.0/thank-after-post.zip). Then build docker image with unique tag.
+* **Build wordpress image**:You need to update `Dockerfile` that has *nginx* with php support, to set up wordpress with predefined theme and [thank-after-post plugin **v0.10.0**](https://github.com/korney4eg/thank-after-post-plugin/releases/download/v0.10.0/thank-after-post.zip). Then build docker image with unique tag. Feel free to reuse `Dockerfile` from task 2.
 
 ### 3. Run local WordPress multiapp setup in containers.
 
-* **Describe docker containers**: Update `docker-compose.yml` file so that two containers started: `database` that uses `mysql` docker image, and `wordpress` that connects to `database`.
+* **Describe docker containers**: Update `docker-compose.yml` file so that two containers started: `database` that uses `mysql` docker image, and `wordpress` that connects to `database`, and `loadbalancer` that would proxy all trafic to `wordpress`.
 * **Configure through environment variables**: Make sure that all configuration is set through environment variables.
-* **Work localy**: Make sure that after starting `docker-compose` you are able to see, login, create posts on wordpress by accessing it through [http://localhost](http://localhost), or [https://localhost](https://localhost) if you want to configure it with HTTPS. There should be `2` replicas of wordpress with the plugin version `v0.10.0`. Also there should be loadbalancer service(any application you want) that proxyes traffic to one of two replicas.
+* **Work localy**: Make sure that after starting `docker-compose` you are able to see, login, create posts on wordpress by accessing it through [http://localhost](http://localhost), or [https://localhost](https://localhost) if you want to configure it with HTTPS. There should be **`2`** replicas of wordpress with the plugin version `v0.10.0`. Also there should be loadbalancer service(any application you want) that proxyes traffic to one of two replicas.
 
 ### 4. Run tests.
 
