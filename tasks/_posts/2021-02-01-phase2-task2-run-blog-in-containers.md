@@ -1,5 +1,5 @@
 ---
-title: Task 02. Run Wordpress in docker.
+title: Task 02. Run WordPress in docker.
 active: true
 published: true
 tags: "Phase2"
@@ -7,7 +7,7 @@ heroes: []
 difficulty: 3
 ---
 
-"Video Games Magazine" become so popular that it was decided to hire programmer that would create plugins for wordpress that would customize your site. One day appeared girl named Mei. Mei asked you to setup her wordpress in docker on her laptop, so that she can develop locally. After you proposed to use Vagrant she answered that Vagrant and VMs is The Prehistoric Period and she want's to have something modern.
+"Video Games Magazine" become so popular that it was decided to hire programmer that would create plugins for WordPress that would customize your site. One day appeared girl named Mei. Mei asked you to set up her WordPress in docker on her laptop, so that she can develop locally. After you proposed to use Vagrant she answered that Vagrant and VMs is The Prehistoric Period, and she wants to have something modern.
 
 <!--more-->
 
@@ -19,23 +19,23 @@ difficulty: 3
 
 ### 2. Build docker image
 
-* **Build wordpress image 1**:You need to update `Dockerfile` that has *nginx* with php support, to setup wordpress with predefined theme and [thank-after-post plugin **v0.8.0**](https://github.com/korney4eg/thank-after-post-plugin/releases/download/v0.8.0/thank-after-post.zip). Then build docker image with unique tag.
-* **Build wordpress image 2**:You need to update `Dockerfile` that has *nginx* with php support, to setup wordpress with predefined theme and [thank-after-post plugin **v0.9.0**](https://github.com/korney4eg/thank-after-post-plugin/releases/download/v0.9.0/thank-after-post.zip). Then build docker image  with unique tag.
+* **Build wordpress image 1**:You need to update `Dockerfile` that has *nginx* with php support, to set up wordpress with predefined theme and [thank-after-post plugin **v0.8.0**](https://github.com/korney4eg/thank-after-post-plugin/releases/download/v0.8.0/thank-after-post.zip). Then build docker image with unique tag.
+* **Build wordpress image 2**:You need to update `Dockerfile` that has *nginx* with php support, to set up wordpress with predefined theme and [thank-after-post plugin **v0.9.0**](https://github.com/korney4eg/thank-after-post-plugin/releases/download/v0.9.0/thank-after-post.zip). Then build docker image  with unique tag.
 
 **Note:** Those imagase shouldn't include database. it will be running in separate docker container.
 
-### 3. Upload images to public container regisry using GitHub actions
+### 3. Upload images to public container regisry using GitHub actions.
 
 * **Create GitHub workflow**: Workflow should build image on every update of `master` branch, tag this image with unique tag and push it to one of the public repositories of your choice.
 
-### 4. Run local Wordpress setup in containers
+### 4. Run local WordPress setup in containers.
 
 * **Describe docker containers**: Update `docker-compose.yml` file so that two containers started: `database` that uses `mysql` docker image, and `wordpress` that connects to `database`.
-* **Work localy**: Make sure that after starting `docker-compose` you able to see, login, create posts on wordpress by accessing it through [http://localhost](http://localhost), or [https://localhost](https://localhost) if you want to configure it with HTTPS.
+* **Work localy**: Make sure that after starting `docker-compose` you are able to see, login, create posts on wordpress by accessing it through [http://localhost](http://localhost), or [https://localhost](https://localhost) if you want to configure it with HTTPS.
 * **Work with different images**: On previous step you create two docker images with different plugin version. To check if it works perfectly try to run wordpress with one image, create post and make sure that you see thank after your post text when publishing. Then update image name with tag that contains plugin version `v0.9.0` and publish new post. It should have newer version of plugin
 * **Configure through environment variables**: Make sure that all configuration is set through environment variables.
 
-### 5. Make your work visible
+### 5. Make your work visible.
 
 * Create Pull Request with changes on `Dockerfile` and `docker-compose.yml` files.
 
@@ -46,7 +46,8 @@ difficulty: 3
 
 ### Tips:
 
-* Docker compose is next level of manipulating docker containers. It allows to get it's logs, see running containers and get many more information.
+* Last line of `Dockerfile` is `CMD ["/usr/bin/supervisord"]`, it means that [supervisord](http://supervisord.org/) will start up `nginx` and `php-fpm` to run on the same container. If you want to add anything addition for runtime of container, you need to everride supervisord's configuration.
+* Docker compose is next level of manipulating docker containers. It allows to get its logs, see running containers and get many more information.
 
 ### Recommended soft:
 
@@ -58,6 +59,8 @@ difficulty: 3
 * [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
 * [Docker Quickstart](https://docs.docker.com/get-started/)
 * [Overview of Docker Compose](https://docs.docker.com/compose/)
+* [Overview of Docker Compose](https://docs.docker.com/compose/)
+* [supervisord](http://supervisord.org/)
 
 ### FAQ
 
