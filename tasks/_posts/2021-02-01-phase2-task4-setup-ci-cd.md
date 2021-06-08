@@ -6,9 +6,12 @@ tags:
   - jenkins
   - docker
 active: true
+difficulty: 3
 ---
-
+Mei - the main developer started actively working on the Wordpress plugin. Together you started to figure out how the development and deployment process could be improved. You found out that the best bet would be to implement Continuous Integration/ Continuous Delivery with help of Jenkins.
 <!--more-->
+In this task, you will need to implement the whole process of [Contineous Integration](https://www.martinfowler.com/articles/continuousIntegration.html)/[Contineous Delivery](https://www.martinfowler.com/delivery.html) using one of the most popular tools - Jenkins.
+
 
 ## Task
 
