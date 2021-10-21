@@ -1,6 +1,6 @@
 ---
 title: Task 05. Scripting in CI/CD.
-published: true
+published: false
 tags: "Phase2"
 ---
 
