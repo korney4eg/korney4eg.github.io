@@ -14,7 +14,7 @@ As a first step, you decided to run Kubernetes locally on your computer.
 
 ## Task
 
-- **Install kubernetes in docker**: Follow instructions from [documentation](https://kind.sigs.k8s.io/docs/user/quick-start/#installation)
+- **Install minikube**: Follow instructions from [documentation](https://minikube.sigs.k8s.io/docs/start/)
 - **Run pod with nginx container**: Start new pod with nginx container and make sure that it's running.
 - **Check logs of nginx container**
 - **Make port forwarding of nginx pod**: Try to access nginx inside pod using your web browser and tools provided by Kubernetes.
@@ -34,7 +34,7 @@ As a first step, you decided to run Kubernetes locally on your computer.
 
 ### Recommended soft:
 
-- [kubernetes in docker](https://kind.sigs.k8s.io/docs/user/quick-start/#installation)
+- [kubernetes in docker](https://minikube.sigs.k8s.io/docs/start/)
 - [`kubectx`](https://github.com/ahmetb/kubectx)
 - [`k9s`](https://github.com/derailed/k9s)
 - [docker](https://www.docker.com/get-started)
