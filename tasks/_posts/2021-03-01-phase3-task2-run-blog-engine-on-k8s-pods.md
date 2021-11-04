@@ -6,9 +6,7 @@ tags: "Phase3"
 difficulty: 2
 ---
 
-### Kubernetes pods.
-
-Here would be first lesson.
+You started learning Kubernetes from the Pods. So your first idea was to run "Video Games Magazine" inside those pods.
 
 <!--more-->
 
