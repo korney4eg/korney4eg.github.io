@@ -18,7 +18,7 @@ As a first step, you decided to run Kubernetes locally on your computer.
 - **Run pod with nginx container**: Start new pod with nginx container and make sure that it's running.
 - **Check logs of nginx container**
 - **Make port forwarding of nginx pod**: Try to access nginx inside pod using your web browser and tools provided by Kubernetes.
-- ** Check resources used by nginx pod**: Try to find Kubernetes command that will allow you to see resource usage by pod.
+- **Check resources used by nginx pod**: Try to find Kubernetes command that will allow you to see resource usage by pod.
 - **get information of when did pod started**
 - **remove nginx pod**
 
@@ -42,6 +42,7 @@ As a first step, you decided to run Kubernetes locally on your computer.
 ### Useful links:
 
 - [Kubernetes getting started](https://kubernetes.io/docs/setup/)
+- [Working with Pods](https://kubernetes.io/docs/concepts/workloads/pods/)
 
 ### FAQ
 

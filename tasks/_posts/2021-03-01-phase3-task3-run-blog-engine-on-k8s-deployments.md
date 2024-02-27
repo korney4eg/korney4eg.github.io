@@ -1,13 +1,12 @@
 ---
-title: Task 03. Run blog engine on k8s. Workloads.
+title: Task 03. Run WordPress on kubernetes using Deployment, StatefulSet, Service.
 published: true
 active: true
 tags: "Phase3"
 difficulty: 2
 ---
-TODO: think about tasks with Deployments, statefulSets, Services and other types of resources.
 
-You have learned about Kubernetes pods. So your first idea was to run "Video Games Magazine" inside those pods.
+Now it's time to scale your application to be able to handle load. So you decided to use deployments, services, statefulsets in your blog engine.
 
 <!--more-->
 
@@ -24,7 +23,6 @@ You have learned about Kubernetes pods. So your first idea was to run "Video Gam
 {: refdef}
 
 - Create Deployment with following parameters:
-
   - replicas: `3`
   - pods labels `app: wordpress`
   - container port should be `80`
@@ -35,9 +33,9 @@ You have learned about Kubernetes pods. So your first idea was to run "Video Gam
 - **Run MySQL database inside container `database` in pod `wordpress`**: Update `wordpress_manifest.yaml` so that there would be pod `wordpress` with `database` container that listens on port `3306`. Feel free to hard-code password and other parameters should  into manifest. To verify that database is working properly try to run expose database port using `kubectl port-forward` command.
 - **Run Wordpress inside container `app` in pod `wordpress`**: Update `wordpress_manifest.yaml` by adding `app` container that listens on port `80` and accessing database by address `localhost:3306`. Use password and other parameters that you configured in previous step.
 - **Check that wordpress pod is running**.
-- ** Clean up**: Run command `kubectl delete -f wordpress_manifest.yaml`.
+- **Clean up**: Run command `kubectl delete -f wordpress_manifest.yaml`.
 
-### 3. Run local WordPress setup in multiple pods.
+### 3. Run local MySQL database with StatefulSet.
 
 {:refdef: style="text-align: center;"}
 ![Diagramm](assets/ph3_t2_p3.png)
