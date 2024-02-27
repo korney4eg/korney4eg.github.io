@@ -18,6 +18,7 @@ jobs:
              env
              git clone https://github.com/korney4eg/korney4eg.github.io/
              cd korney4eg.github.io/
+             echo $GITHUB_HEAD_REF
              git checkout $GITHUB_HEAD_REF
              bundle install
              /change-checker check -c config.yaml -u $GITHUB_HEAD_REF -b master -d
