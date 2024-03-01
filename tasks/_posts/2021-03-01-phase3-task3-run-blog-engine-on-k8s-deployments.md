@@ -16,36 +16,31 @@ Now it's time to scale your application to be able to handle load. So you decide
 
 - Fork [repository for task03](https://github.com/learningdevops-makvaz-com/phase03_task03) and clone forked repo.
 
-### 2. Run local WordPress setup in couple pods using Deployment.
+### 2. Understand Kubernetes basics.
 
-{:refdef: style="text-align: center;"}
-![Diagramm](assets/ph3_t2_p2.png)
-{: refdef}
+- **Learn about Kubernetes [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)**: read documentation
+- **Run simple application in deployment from file**: Create deployment using yaml file, with name `simple-app` that would run `dockersamples/static-site` container, has label `app: simple-app` and has `2` replicas, exposed port 80. Apply your changes to kubernetes. And using `kubectl port-forward` command try to open you application in browser.
+- **Run simple application in deployment using command line**: Create deployment using command `kubectl run`, with name `simple-app2` that would run `dockersamples/static-site` container, has label `app: simple-app2` and has `2` replicas, exposed port 80. Apply your changes to kubernetes. And using `kubectl port-forward` command try to open you application in browser.
+
+- **Learn about Kubernetes [Service](https://kubernetes.io/docs/concepts/services-networking/service/)**: read documentation
+- **Expose simple-app pods as one endpoint**: After creating and properly configuring service make sure that application is available on this service.
+- **Clean up**: remove created previously deployments and service.
+
+### 2. Run local MySQL database with StatefulSet.
+
+- **Learn about Kubernetes [StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)**
+- **Create StatefulSet database**: Create statefulSet named `database`, with container `mysql`, with labels that you want.
+- **Expose database using service**. Make sure that MySQL is accessible by port 3306.
+
+### 3. Run local WordPress setup in couple pods using Deployment.
 
 - Create Deployment with following parameters:
-  - replicas: `3`
+  - replicas: `2`
   - pods labels `app: wordpress`
   - container port should be `80`
   - image for wordpress container should be `korney4eg/wordpress-empty:latest`
   - pods selector should look for pods labeled `app: wordpress`
   - pod name: `wordpress`
-
-- **Run MySQL database inside container `database` in pod `wordpress`**: Update `wordpress_manifest.yaml` so that there would be pod `wordpress` with `database` container that listens on port `3306`. Feel free to hard-code password and other parameters should  into manifest. To verify that database is working properly try to run expose database port using `kubectl port-forward` command.
-- **Run Wordpress inside container `app` in pod `wordpress`**: Update `wordpress_manifest.yaml` by adding `app` container that listens on port `80` and accessing database by address `localhost:3306`. Use password and other parameters that you configured in previous step.
-- **Check that wordpress pod is running**.
-- **Clean up**: Run command `kubectl delete -f wordpress_manifest.yaml`.
-
-### 3. Run local MySQL database with StatefulSet.
-
-{:refdef: style="text-align: center;"}
-![Diagramm](assets/ph3_t2_p3.png)
-{: refdef}
-
-- **Run pod `database` with MySQL database container**: Update `database.yaml` so that there would be pod `database` with `mysql` container that works on port `3306`. Password and other parameters should be hard-coded in manifest.
-- **Check that `database` pod is running**. Try to use Kubernetes service.
-- **Run pod with Wordpress**: Update `wordpress.yaml` so that there would be pod `wordpress` with `app` container that works on port `80`. Password and other parameters should be hard-coded in manifest. Use `database` pod's address as your database.
-- **Check that wordpress pod is running**. Try to use Kubernetes service.
-- ** Clean up**: Run command `kubectl delete -f wordpress_manifest.yaml`.
 
 ### 4. Run Init container inside WordPress pod.
 
