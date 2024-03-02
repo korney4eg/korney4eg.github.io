@@ -35,24 +35,12 @@ Now it's time to scale your application to be able to handle load. So you decide
 ### 3. Run local WordPress setup in couple pods using Deployment.
 
 - Create Deployment with following parameters:
+  - deployment name: `wordpress`
   - replicas: `2`
   - pods labels `app: wordpress`
-  - container port should be `80`
-  - image for wordpress container should be `korney4eg/wordpress-empty:latest`
-  - pods selector should look for pods labeled `app: wordpress`
-  - pod name: `wordpress`
+  - use `wordpress` pod manifest from previous task as a template for deployment
 
-### 4. Run Init container inside WordPress pod.
-
-{:refdef: style="text-align: center;"}
-![Diagramm](assets/ph3_t2_p4.png)
-{: refdef}
-
-- **Build container with wordpress that doesn't have plugin built it**.
-- **Replace container image from `app` container with newly built image**.
-- **Run Init container `plugin-download` that downloads plugin**: Before `app` container started we need to have [thank-after-post-plugin](https://github.com/korney4eg/thank-after-post-plugin) to be downloaded by `plugin-download` container and later to be mounted in `app` container. Please update `wordpress.yaml` file for this task.
-
-### 5. Make your work visible.
+### 4. Make your work visible.
 
 Create Pull Request with changes on files:
 
@@ -60,11 +48,11 @@ Create Pull Request with changes on files:
 - `database.yaml`
 - `wordpress.yaml`
 
+### 5. Cleanup created resources
+
 ### Additional tasks if you feel that it was too easy.
 
-1. Resources and limits: Before running any container it's always nice to limit it's resources usage so that it doesn't allocate all of them. Try to use it.
-2. Kubernetes has mechanism to check whether container is ready to handle traffic, it's called `readinessProbe`. Try to use it.
-3. Kubernetes has mechanism to check whether container is ready to handle traffic, it's called `livenessProbe`. Try to use it.
+- _N/A_
 
 ### Tips:
 
@@ -78,6 +66,8 @@ Create Pull Request with changes on files:
 
 - [Kuberentes API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/)
 - [Kuberentes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+- [Kubernetes Service](https://kubernetes.io/docs/concepts/services-networking/service/)
+- [Kubernetes StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
 
 ### FAQ
 
