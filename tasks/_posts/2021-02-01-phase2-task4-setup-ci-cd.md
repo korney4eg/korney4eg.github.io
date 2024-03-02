@@ -42,7 +42,8 @@ Job should do following:
 
 #### 4.1. Update `build_wp_image` stage.
 
-- **Build docker wordpress docker image with newly created plugin**: build wordpress image with provided version of plugin.
+- **Build docker wordpress image with newly created plugin**: build wordpress image with provided version of plugin.
+- **Push docker wordpress image with plugin to Docker Hub**
 
 #### 4.2. Run docker-compose with new wordpress image.
 

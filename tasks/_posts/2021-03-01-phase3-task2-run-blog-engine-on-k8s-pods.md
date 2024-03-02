@@ -34,7 +34,7 @@ You started learning Kubernetes from the Pods. So your first idea was to run "Vi
 
 - **Run pod with MySQL database**: Update `database.yaml` so that there would be pod `database` with `mysql` container that works on port `3306`. Password and other parameters should be hardcoded in manifest.
 - **Check that `database` pod is running**.
-- **Run pod with Wordpress**: Update `wordpress.yaml` so that there would be pod `wordpress` with `app` container that works on port `80`. Password and other parameters should be hardcoded in manifest. Use `database` pod's address as your database.
+- **Run pod with Wordpress**: Update `wordpress.yaml` so that there would be pod `wordpress` with `app` container that works on port `80`. Password and other parameters should be hardcoded in manifest. Use `database` pod's hostname as your database.
 - **Check that wordpress pod is running**.
 
 ### 4. Run Init container inside WordPress pod.
@@ -55,6 +55,9 @@ Create Pull Request with changes on files:
 - `database.yaml`
 - `wordpress.yaml`
 
+
+### 6. Cleanup created resources
+
 ### Additional tasks if you feel that it was too easy.
 
 1. Resources and limits: Before running any container it's always nice to limit it's resources usage so that it doesn't allocate all of them. Try to use it.
@@ -63,7 +66,7 @@ Create Pull Request with changes on files:
 
 ### Tips:
 
-- _N/A_
+- Try to find info, how to get pod's hostname
 
 ### Recommended soft:
 
