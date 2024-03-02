@@ -19,7 +19,7 @@ Now it's time to scale your application to be able to handle load. So you decide
 ### 2. Understand Kubernetes basics.
 
 - **Learn about Kubernetes [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)**: read documentation
-- **Run simple application in deployment from file**: Create deployment using yaml file, with name `simple-app` that would run `dockersamples/static-site` container, has label `app: simple-app` and has `2` replicas, exposed port 80. Apply your changes to kubernetes. And using `kubectl port-forward` command try to open you application in browser.
+- **Run simple application in deployment from file**: Create deployment using yaml file `wordpress_manifest.yaml`, with name `simple-app` that would run `dockersamples/static-site` container, has label `app: simple-app` and has `2` replicas, exposed port 80. Apply your changes to kubernetes. And using `kubectl port-forward` command try to open you application in browser.
 - **Run simple application in deployment using command line**: Create deployment using command `kubectl run`, with name `simple-app2` that would run `dockersamples/static-site` container, has label `app: simple-app2` and has `2` replicas, exposed port 80. Apply your changes to kubernetes. And using `kubectl port-forward` command try to open you application in browser.
 
 - **Learn about Kubernetes [Service](https://kubernetes.io/docs/concepts/services-networking/service/)**: read documentation
@@ -29,16 +29,19 @@ Now it's time to scale your application to be able to handle load. So you decide
 ### 2. Run local MySQL database with StatefulSet.
 
 - **Learn about Kubernetes [StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)**
-- **Create StatefulSet database**: Create statefulSet named `database`, with container `mysql`, with labels that you want.
-- **Expose database using service**. Make sure that MySQL is accessible by port 3306.
+- **Create StatefulSet database**: Create statefulSet named `database`, with container `mysql`, with labels that you want. Add it to `database.yaml` file.
+- **Expose database using service**. Make sure that MySQL is accessible by port 3306. Add it to `database.yaml` file.
 
 ### 3. Run local WordPress setup in couple pods using Deployment.
 
-- Create Deployment with following parameters:
+- **Create Deployment with following parameters:**
   - deployment name: `wordpress`
   - replicas: `2`
   - pods labels `app: wordpress`
   - use `wordpress` pod manifest from previous task as a template for deployment
+  - save manifest to `wordpress.yaml` file
+
+- **Expose wordpress using service**. Make sure that Wordpress blog is accessible by port 80. Add it to `wordpress.yaml` file.
 
 ### 4. Make your work visible.
 
