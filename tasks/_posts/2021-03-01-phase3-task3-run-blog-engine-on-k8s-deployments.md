@@ -26,13 +26,13 @@ Now it's time to scale your application to be able to handle load. So you decide
 - **Expose simple-app pods as one endpoint**: After creating and properly configuring service make sure that application is available on this service.
 - **Clean up**: remove created previously deployments and service.
 
-### 2. Run local MySQL database with StatefulSet.
+### 3. Run local MySQL database with StatefulSet.
 
 - **Learn about Kubernetes [StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)**
 - **Create StatefulSet database**: Create statefulSet named `database`, with container `mysql`, with labels that you want. Add it to `database.yaml` file.
 - **Expose database using service**. Make sure that MySQL is accessible by port 3306. Add it to `database.yaml` file.
 
-### 3. Run local WordPress setup in couple pods using Deployment.
+### 4. Run local WordPress setup in couple pods using Deployment.
 
 - **Create Deployment with following parameters:**
   - deployment name: `wordpress`
@@ -43,7 +43,7 @@ Now it's time to scale your application to be able to handle load. So you decide
 
 - **Expose wordpress using service**. Make sure that Wordpress blog is accessible by port 80. Add it to `wordpress.yaml` file.
 
-### 4. Make your work visible.
+### 5. Make your work visible.
 
 Create Pull Request with changes on files:
 
@@ -51,7 +51,7 @@ Create Pull Request with changes on files:
 - `database.yaml`
 - `wordpress.yaml`
 
-### 5. Cleanup created resources
+### 6. Cleanup created resources
 
 ### Additional tasks if you feel that it was too easy.
 

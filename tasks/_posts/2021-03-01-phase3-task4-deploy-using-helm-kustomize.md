@@ -14,25 +14,27 @@ You were able to successfully run wordpress in Kubernetes. Now it's time to make
 
 ### 1. Repository
 
-- Fork [repository for task03](https://github.com/learningdevops-makvaz-com/phase03_task03) and clone forked repo.
+- Fork [repository for task03](https://github.com/learningdevops-makvaz-com/phase03_task04) and clone forked repo.
 
-### 2. Understand Kubernetes basics.
+### 2. Understand helm basics.
 
-- **Learn about Kubernetes [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)**: read documentation
-- **Run simple application in deployment from file**: Create deployment using yaml file `wordpress_manifest.yaml`, with name `simple-app` that would run `dockersamples/static-site` container, has label `app: simple-app` and has `2` replicas, exposed port 80. Apply your changes to kubernetes. And using `kubectl port-forward` command try to open you application in browser.
-- **Run simple application in deployment using command line**: Create deployment using command `kubectl run`, with name `simple-app2` that would run `dockersamples/static-site` container, has label `app: simple-app2` and has `2` replicas, exposed port 80. Apply your changes to kubernetes. And using `kubectl port-forward` command try to open you application in browser.
+- **Learn about how to use [Helm](https://helm.sh/docs/intro/using_helm/)**: read documentation
+- **Run nginx chart with some changes**: Install into your kubernetes cluster [nginx chart](https://artifacthub.io/packages/helm/bitnami/nginx) with release name `my-nginx` and following changes: `replicaCount` set to 3.
+- **Fix service type**: It seems that `LoadBalancer` service type is not proper in our case. Please [upgrade](https://helm.sh/docs/helm/helm_upgrade/) release to use service type as `NodePort`. Don't forget to to keep number of replicas as `3`. 
+- **Check that application is working correctly**: try to access `my-nginx` service 80th port and make sure that nginx is running. You can also check logs on different pods.
+- **Cleanup**: delete `my-nginx` release from cluster.
 
-- **Learn about Kubernetes [Service](https://kubernetes.io/docs/concepts/services-networking/service/)**: read documentation
-- **Expose simple-app pods as one endpoint**: After creating and properly configuring service make sure that application is available on this service.
-- **Clean up**: remove created previously deployments and service.
+### 3. Create your own helm chart.
 
-### 2. Run local MySQL database with StatefulSet.
+- **Create your own chart that installs wordpress**: Using manifests from previous task that brings up database and application create template for new helm chart in `helm` folder.
+- **Make some paramters configurable**:
+  - requests and limits
+  - app label value
+  - version of thank-after-post plugin that is downloaded in init container
 
-- **Learn about Kubernetes [StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)**
-- **Create StatefulSet database**: Create statefulSet named `database`, with container `mysql`, with labels that you want. Add it to `database.yaml` file.
-- **Expose database using service**. Make sure that MySQL is accessible by port 3306. Add it to `database.yaml` file.
+- **Create github workflow that saves your chart on push to master/main branch**
 
-### 3. Run local WordPress setup in couple pods using Deployment.
+### 4. Run local WordPress setup in couple pods using Deployment.
 
 - **Create Deployment with following parameters:**
   - deployment name: `wordpress`
@@ -67,7 +69,7 @@ Create Pull Request with changes on files:
 
 ### Useful links:
 
-- [Kuberentes API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/)
+- [Creating helm template](https://helm.sh/docs/chart_template_guide/getting_started/)
 - [Kuberentes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 - [Kubernetes Service](https://kubernetes.io/docs/concepts/services-networking/service/)
 - [Kubernetes StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
